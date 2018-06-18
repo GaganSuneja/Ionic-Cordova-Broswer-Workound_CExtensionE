@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "CordovaCloser",
+    "description": "closes the error popup for cordova error to imporove workflow",
+    "version": "1",
+    "author": "Gagan Suneja",
+
+    "content_scripts":[
+        {
+           "matches":["http://localhost:8100/ionic-lab"],
+            "js": ["jquery-2.2.0.min.js","content.js"],
+            "run_at":"document_end"
+        }
+    ],
+    "permissions": ["activeTab"]
+}
